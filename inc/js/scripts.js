@@ -10,17 +10,24 @@ $(document).ready(function () {
     }
     return false;
 });
-var scrolled;
-window.onscroll = function() {
-    scrolled = window.pageYOffset || document.documentElement.scrollTop;
-    if(scrolled > 1){
-        $(".header").css({"box-shadow": "0px 5px 8px 1px rgba(0, 0, 0, 0.25)"})
-        $(".header").css({"border": "none"})
-    }
-    if(1 > scrolled){
-        $(".header").css({"box-shadow": "none"})    
-        $(".header").css({"border-bottom": "1px solid #C4C4C4"})    
+    var scrolled;
+    window.onscroll = function() {
+        scrolled = window.pageYOffset || document.documentElement.scrollTop;
+        if(scrolled > 1){
+            $(".header").css({"box-shadow": "0px 5px 8px 1px rgba(0, 0, 0, 0.25)"})
+            $(".header").css({"border": "none"})
+        }
+        if(1 > scrolled){
+            $(".header").css({"box-shadow": "none"})    
+            $(".header").css({"border-bottom": "1px solid #C4C4C4"})    
+        }
+
     }
 
-}
+    $('.portfolio-slider').slick({
+        infinite: false,
+        variableWidth: true,
+        nextArrow: '<span class="icon-arr"></span>',
+        prevArrow: '<span class="icon-arr icon-arr--prev"></span>',
+    })
 });

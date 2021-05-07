@@ -1,0 +1,60 @@
+.portfolio
+  padding-top: 50px
+  padding-bottom: 55px
+  &__title
+    margin-top: 0
+    margin-bottom: 20px
+    font-size: 36px
+    line-height: 43px
+    text-transform: uppercase
+    color: #000000
+  &__subtitle
+    margin-top: 0
+    margin-bottom: 55px
+    font-size: 18px
+    line-height: 22px
+    color: #000000
+  &-slide
+    width: 364px
+    height: 349px
+    background: #C4C4C4
+    position: relative
+    margin-right: 93px
+    &__image
+      position: absolute
+      top: 0
+      right: 0
+      left: 0
+      bottom: 0
+      z-index: 1
+      border: 1px solid #C4C4C4
+      width: 100%
+      height: 100%
+      object-fit: cover
+    &__link
+      position: absolute
+      z-index: 2
+      left: 85px
+      bottom: 15px
+      padding: 5px 10px
+      border: 1px solid #000
+      background: rgba(196, 196, 196, 0.5)
+      font-size: 18px
+      line-height: 22px
+      color: #000000
+      text-transform: uppercase
+      text-decoration: none
+      &--right
+        left: unset
+        right: 90px
+.icon
+  &-arr
+    top: 50%
+    position: absolute
+    right: -25px
+    transform: translateY(-50%)
+    cursor: pointer
+    &--prev
+      right: unset
+      left: -25px
+      transform: rotate(180deg)
