@@ -27,6 +27,8 @@ $(document).ready(function () {
     $('.portfolio-slider').slick({
         infinite: false,
         variableWidth: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
         nextArrow: '<span class="icon-arr"></span>',
         prevArrow: '<span class="icon-arr icon-arr--prev"></span>',
     })
