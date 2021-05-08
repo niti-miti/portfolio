@@ -1,0 +1,145 @@
+@media (max-width: 1300px)
+  .container
+    max-width: 1000px
+  .about
+    &-left
+      max-width: 500px
+    &-right
+      max-width: 464px
+      height: 354px
+  .skills
+    &-right
+      grid-template-columns: repeat(2, 300px)
+  .experience
+    &-right
+      max-width: 585px
+  .education
+    &-right
+      max-width: 585px
+  .portfolio
+    &-slider
+      max-width: 823px
+      margin: auto
+  .icon
+    &-arr
+      right: -40px
+      &--prev
+        right: unset
+        left: -40px
+@media (max-width: 1024px)
+  .container
+    max-width: 750px
+  .header
+    &-nav
+      display: none
+  .burger
+    width: 26px
+    height: 14px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    cursor: pointer
+    &-line
+      width: 100%
+      border: 1px solid #000000
+  .about
+    &-left
+      max-width: 390px
+      &__title
+        font-size: 26px
+        margin-bottom: 10px
+      &__text
+        font-size: 16px
+    &-right
+      max-width: 335px
+      height: 260px
+    &-item
+      &__title
+        font-size: 16px
+      &__link
+        font-size: 15px
+  .icon
+    &-ig, &-in
+      font-size: 17px
+    &-vk
+      font-size: 14px
+    &-tg
+      font-size: 18px
+  .skills
+    &-wrapper
+      flex-direction: column
+    &-left
+      &__subtitle
+        display: none
+      &__image
+        display: none
+      &__title
+        font-size: 24px
+        margin-bottom: 25px
+    &-block
+      &__title
+        font-size: 20px
+      &__text
+        font-size: 16px
+    &-right
+      grid-template-columns: repeat(2, 343px)
+  .experience
+    &-wrapper
+      flex-direction: column
+    &-left
+      &__title
+        font-size: 24px
+        margin-bottom: 25px
+      &__subtitle
+        display: none
+      &__image
+        display: none
+    &-right
+      max-width: 100%
+      &__title
+        font-size: 20px
+      &__date
+        font-size: 13px
+      &__text
+        font-size: 16px
+  .education
+    &-wrapper
+      flex-direction: column
+    &-left
+      &__title
+        font-size: 24px
+        margin-bottom: 25px
+      &__subtitle
+        display: none
+      &__image
+        display: none
+    &-right
+      max-width: 100%
+    &-block
+      &__title
+        font-size: 20px
+      &__date
+        font-size: 13px
+      &__text
+        font-size: 16px
+  .portfolio
+    &__title
+      font-size: 24px
+      margin-bottom: 25px
+    &__subtitle
+      display: none
+    &-slide
+      width: 300px
+      height: 225px
+      &__link
+        left: 70px
+        bottom: 15px
+        font-size: 15px
+        &--right
+          left: unset
+          right: 70px
+    &-slider
+      max-width: 695px
+@media (max-width: 768px)
+  .container
+    max-width: 540px
