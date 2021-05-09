@@ -44,4 +44,13 @@ $(document).ready(function () {
             },
         ]
     })
+    $('.burger').click(function(){
+        $('.header-nav--mobile').slideToggle();
+    })
+
+    if ($(window).width() < 1024) {
+        $('.header-nav__link').click(function(){
+            $('.header-nav--mobile').slideToggle();
+        })
+    }
 });

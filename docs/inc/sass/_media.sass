@@ -30,8 +30,21 @@
   .container
     max-width: 750px
   .header
+    position: fixed
     &-nav
       display: none
+      &--mobile
+        position: sticky
+        top: 81px
+        padding: 20px 0
+        z-index: 3
+        background: #fff
+      &__ul
+        padding: 0
+        flex-direction: column
+      &__li
+        margin-right: 0
+        margin-bottom: 15px
   .burger
     width: 26px
     height: 14px
@@ -44,6 +57,7 @@
       height: 1px
       background: #000000
   .about
+    padding-top: 115px
     &-left
       max-width: 390px
       &__title
@@ -144,8 +158,12 @@
 @media (max-width: 768px)
   .container
     max-width: 540px
+  .header
+    &-nav
+      &__link
+        font-size: 14px
   .about
-    padding-top: 30px
+    padding-top: 115px
     padding-bottom: 30px
     &-wrapper
       flex-direction: column-reverse
@@ -190,6 +208,7 @@
     &-wrapper
       padding: 14px 0
   .about
+    padding-top: 80px
     &-left
       &__title
         font-size: 18px
